@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .invoice-details {
+            margin: 20px 0;
+        }
+        .invoice-details div {
+            margin-bottom: 15px;
+        }
+        .invoice-details label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .invoice-details input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .search-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+        .cancel-btn {
+            background-color: #f44336;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Invoice</h1>
+
+    <div class="invoice-details">
+        <div>
+            <label for="customerNumber">Customer Number:</label>
+            <input type="text" id="customerNumber" name="customerNumber" placeholder="Enter customer number">
+        </div>
+        <div>
+            <label for="invoiceNumber">Invoice Number:</label>
+            <input type="text" id="invoiceNumber" name="invoiceNumber" placeholder="Enter invoice number">
+        </div>
+        <div>
+            <label for="invoiceDate">Invoice Date:</label>
+            <input type="text" id="invoiceDate" name="invoiceDate" placeholder="Enter invoice date">
+        </div>
+        <div>
+            <label for="customerName">Customer Name:</label>
+            <input type="text" id="customerName" name="customerName" placeholder="Enter customer name">
+        </div>
+        <div>
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" placeholder="Enter country">
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="search-btn" onclick="searchFunction()">Search</button>
+        <button class="cancel-btn" onclick="cancelFunction()">Cancel</button>
+    </div>
+
+    <script>
+        function searchFunction() {
+            alert("Search button clicked!");
+        }
+
+        function cancelFunction() {
+            alert("Cancel button clicked!");
+        }
+    </script>
+</body>
+</html>
